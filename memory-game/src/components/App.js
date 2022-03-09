@@ -1,11 +1,12 @@
 import './style.css';
-
-function App() {
+import CardBuilder from './CardBuilder';
+import React from 'react'
+let App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-      TEST
-      </header>
+      <h1 className='header'>Memory Game - Animal Edition</h1>
+      <h3 className='score'>Score: {}</h3>
+      <CardBuilder />
     </div>
   );
 }

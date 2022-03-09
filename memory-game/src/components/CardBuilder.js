@@ -1,64 +1,87 @@
-import React, { useState } from "react";
+import React, {useEffect} from "react";
+import "./style.css"
 
-const CardBuilder = props => {
-  let Buck = {
-    id: 1,
-    name: 'Brick',
-    img: "./img/buck.jpg"
+const CardBuilder = (props) => {
+  let animalArray = {
+    Buck: 'Brick Break',
+    Cat: 'Cindy Claws',
+    Chameleon: 'Carter Change',
+    Dog: 'Dorothy Drools',
+    Duck: 'Danica Drums',
+    Fox: 'Frank Frolic',
+    Giraffe: 'Georgie Glam',
+    Horse: 'Hayley Hops',
+    Parrot: 'Patsy Purps',
+    Squid: 'Seth Swimmy',
+    Squirrel: 'Sandy Sweets',
+    Tiger: 'Tempie Tantrum',
   }
-  let Cat = {
-    id: 2,
-    name: 'Cindy',
-    img: "./img/cat.jpg"
-  }
-  let Chameleon = {
-    id: 3,
-    name: 'Carter',
-    img: "./img/chameleon.jpg"
-  }
-  let Dog = {
-    id: 4,
-    name: 'Dorothy',
-    img: "./img/dog.jpg"
-  }
-  let Duck = {
-    id: 5,
-    name: 'Danica',
-    img: "./img/duck.jpg"
-  }
-  let Fox = {
-    id: 6,
-    name: 'Frank',
-    img: "./img/fox.jpg"
-  }
-  let Giraffe = {
-    id: 7,
-    name: 'Georgie',
-    img: "./img/giraffe.jpg"
-  }
-  let Horse = {
-    id: 8,
-    name: 'Hayley',
-    img: "./img/horse.jpg"
-  }
-  let Parrot = {
-    id: 9,
-    name: 'Patsy',
-    img: "./img/parrot.jpg"
-  }
-  let Squid = {
-    id: 10,
-    name: 'Seth',
-    img: "./img/squid.jpg"
-  }
-  let Squirrel = {
-    id: 11,
-    name: 'Sandy',
-    img: "./img/squirrel.jpg"
-  }
-  let Tiger = {
-    id: 12,
-    name: 'Tempie',
-    img: "./img/tiger.jpg"
-  }
+  // useEffect(()=>{
+  //   const randomizeCards = () => {
+  //   };
+    
+      
+  //   // document.addEventListener("click", Scoreboard)
+  // })
+  // let afunc = () => {
+  //   for (i in animalArray){
+  //     console.log(i + "test?")
+  //   }
+  // }
+  // afunc()
+  console.log(animalArray)
+  console.log(animalArray)
+  return ( 
+    <div className="card-container">
+      <div className="card">
+        <img alt="img" src={require("./img/buck.jpg")}></img>
+        <p>{animalArray.Buck}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/cat.jpg")}></img>
+        <p>{animalArray.Cat}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/chameleon.jpg")}></img>
+        <p>{animalArray.Chameleon}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/dog.jpg")}></img>
+        <p>{animalArray.Dog}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/duck.jpg")}></img>
+        <p>{animalArray.Duck}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/fox.jpg")}></img>
+        <p>{animalArray.Fox}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/giraffe.jpg")}></img>
+        <p>{animalArray.Giraffe}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/horse.jpg")}></img>
+        <p>{animalArray.Horse}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/parrot.jpg")}></img>
+        <p>{animalArray.Parrot}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/squid.jpg")}></img>
+        <p>{animalArray.Squid}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/squirrel.jpg")}></img>
+        <p>{animalArray.Squirrel}</p>
+      </div>
+      <div className="card">
+        <img alt="img" src={require("./img/tiger.jpg")}></img>
+        <p>{animalArray.Tiger}</p>
+      </div>
+    </div> 
+    )
 }
+export default CardBuilder;
