@@ -19,34 +19,47 @@ body {
   background-attachment: fixed;
 }
 .card {
+  max-width: 450px;
   overflow: hidden;
   border: solid black 2px;
   border-radius: 12px;
-  justify-content: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 4px;
 }
 img {
+  max-width: 300px;
   width: 20vw;
   height: 20vh;
   border-radius: 12px;
 }
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-  margin: 4%;
-}
 .card:hover {
   opacity: 0.95;
 }
-.header {
+header {
+  margin: 2%;
+  display: flex;
   text-align: center;
-  font-size: 2.3rem;
+  justify-content: space-between;
 }
-.score {
-  text-align: end;
-  margin-right: 10%;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  justify-content: center;
+  gap: 4px;
+}
+.intimate-card-container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+button {
+  background: none;
+  border: none;
+}
+p {
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
 }
