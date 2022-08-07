@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/memory-game/static/media/duck.bc5b5876.jpg"
   },
   {
-    "revision": "806641488ef74357929b5e66a1fd5144",
+    "revision": "3a12e48910abfc4c859ecea466968344",
     "url": "/memory-game/index.html"
   }
 ];
